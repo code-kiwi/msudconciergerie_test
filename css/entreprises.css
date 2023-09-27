@@ -1,0 +1,16 @@
+main .main__content {
+    background-image: url(./../src/images/headers/foret_soleil_couchant.jpg);
+    transition: var(--long-transition-delay);
+}
+
+/* S (VW < 640px) */
+@media screen and (max-width: 39.9375rem) {
+}
+
+/* M (640px <= VW < 1024px) */
+@media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
+}
+
+/* L (VW >= 1024px) */
+@media screen and (max-width: 64rem) {
+}

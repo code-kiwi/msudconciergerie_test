@@ -1,0 +1,46 @@
+main .main__content {
+    background-image: url(./../src/images/headers/banc_olivier.jpg);
+    transition: var(--long-transition-delay);
+}
+
+main .main__content__articleIntroduction .main__content__article__paragraph {
+    width: 60%;
+}
+
+main .main__content__articleCheckInOut .main__content__article__paragraph {
+    width: 70%;
+}
+
+main .main__content__articleIntroduction .main__content__article__rightPicture {
+    position: absolute;
+    right: 2rem;
+    bottom: 50%;
+    transform: translateY(50%);
+    max-height: 100%;
+    max-width: 40%;
+}
+
+main .main__content__articleCheckInOut .main__content__article__rightPicture {
+    position: absolute;
+    right: 4rem;
+    bottom: 50%;
+    transform: translateY(50%);
+    max-height: 100%;
+    max-width: 20%;
+}
+
+main .main__content__article__proption__image {
+    margin: 2rem auto 0 auto;
+}
+
+/* S (VW < 640px) */
+@media screen and (max-width: 39.9375rem) {
+}
+
+/* M (640px <= VW < 1024px) */
+@media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
+}
+
+/* L (VW >= 1024px) */
+@media screen and (max-width: 64rem) {
+}

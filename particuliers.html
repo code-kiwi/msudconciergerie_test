@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MSudConciergerie - Votre conciergerie privée</title>
+        <link rel="shortcut icon" href="./src/images/logo2_favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/particuliers.css" />
+        <link rel="stylesheet" href="./assets/font_awesome/css/brands.min.css" />
+        <link rel="stylesheet" href="./assets/font_awesome/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="./assets/font_awesome/css/solid.min.css" />
+        <script src="./scripts/script.js" defer></script>
+        <script src="./scripts/particuliers.js" defer></script>
+    </head>
+    <body>
+        <div id="overlay" class="overlay"></div>
+        <header>
+            <div class="header__banner">
+                <a href="index.html" class="header__banner__logo">
+                    <img class="header__banner__logo__image" src="./src/images/logo2_cropped.png" alt="Logo comprenant une maison, un rameau d'olivier et une clé" />
+                    <p class="header__banner__logo__name">
+                        <span class="header__banner__logo__name__start gothicFont">M</span> <span class="header__banner__logo__name__end cursiveFont">Sud Conciergerie</span>
+                        <span class="header__banner__logo__name__description">Conciergerie Privée</span>
+                    </p>
+                </a>
+            </div>
+            <nav class="menu">
+                <ul class="menu__main">
+                    <li class="menu__main__item"><a href="index.html" class="menu__main__link">Accueil</a></li>
+                    <li class="menu__main__item"><a href="particuliers.html" class="menu__main__link">Particuliers</a></li>
+                    <li class="menu__main__item"><a href="gestion_locative.html" class="menu__main__link">Gestion Locative</a></li>
+                    <li class="menu__main__item"><a href="entreprises.html" class="menu__main__link">Entreprises</a></li>
+                    <li class="menu__main__item"><a href="contact.html" class="menu__main__link">Contact</a></li>
+                </ul>
+                <ul class="menu__socialMedia">
+                    <li class="menu__socialMedia__item">
+                        <a href="https://www.instagram.com" target="_blank" class="menu__socialMedia__link"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="menu__socialMedia__item">
+                        <a href="https://www.facebook.com" target="_blank" class="menu__socialMedia__link"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="main__content" id="mainContent">
+                <article class="main__content__intro">
+                    <h2 class="main__content__intro__title">Notre offre pour les Particuliers</h2>
+                    <h4 class="main__content__intro__subtitle">"Une offre sur-mesure, adaptée à vos besoins"</h4>
+                    <p class="main__content__intro__description">
+                        Votre satisfaction est notre priorité absolue. Chacun de nos services a été soigneusement conçu pour répondre à vos besoins particuliers. Chaque offre s'inscrit dans le cadre
+                        de notre philosophie d'excellence, alliant confiance, bienveillance, transparence et discrétion.
+                    </p>
+                </article>
+                <div class="main__content__articles" id="servicesContainerElement">
+                    <article class="main__content__article main__content__article--mainBrandColor">
+                        <h3 class="main__content__article__title">Services du quotidien</h3>
+                        <ul class="main__content__services">
+                            <li class="main__content__service">
+                                <div class="main__content__service__frontElement">
+                                    <img class="main__content__service__image" src="./src/images/services/cleaning.jpg" alt="Produits de nettoyage et brosse" />
+                                    <div class="main__content__service__info">
+                                        <p class="main__content__service__info__title">Ménage et entretien</p>
+                                        <button class="main__content__service__info__button">En savoir plus</button>
+                                    </div>
+                                </div>
+                                <div class="main__content__service__modal">
+                                    <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                    <h4 class="main__content__service__modal__title">Ménage et entretien</h4>
+                                    <p class="main__content__service__modal__description">
+                                        Optez pour notre service de ménage et d'entretien pour un espace impeccable. Que ce soit avant ou après une location, notre équipe expérimentée et réactive
+                                        s'assure que chaque coin de votre domicile brille de propreté. Détendez-vous et profitez de votre temps, sans souci du ménage.
+                                    </p>
+                                    <button class="main__content__service__modal__closeButton">Fermer</button>
+                                </div>
+                            </li>
+                            <li class="main__content__service">
+                                <div class="main__content__service__frontElement">
+                                    <img class="main__content__service__image" src="./src/images/services/pressing.jpg" alt="Chemises rangées dans un dressing" />
+                                    <div class="main__content__service__info">
+                                        <p class="main__content__service__info__title">Pressing</p>
+                                        <button class="main__content__service__info__button">En savoir plus</button>
+                                    </div>
+                                </div>
+                                <div class="main__content__service__modal">
+                                    <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                    <h4 class="main__content__service__modal__title">Pressing</h4>
+                                    <p class="main__content__service__modal__description">
+                                        Confiez vos vêtements délicats à notre service de pressing professionnel. En partenariat avec une entreprise expérimentée bien établie localement, nous veillons
+                                        à ce que vos tenues soient soigneusement entretenues. Obtenez des vêtements impeccables et rafraîchis, prêts à refléter votre meilleure apparence. Optez pour le
+                                        pressing de qualité pour une garde-robe qui vous met en valeur.
+                                    </p>
+                                    <button class="main__content__service__modal__closeButton">Fermer</button>
+                                </div>
+                            </li>
+                            <li class="main__content__service">
+                                <div class="main__content__service__frontElement">
+                                    <img class="main__content__service__image" src="./src/images/services/cooking.jpg" alt="Plat végétal dans un wok, couleurs chaudes" />
+                                    <div class="main__content__service__info">
+                                        <p class="main__content__service__info__title">Cuisine à domicile</p>
+                                        <button class="main__content__service__info__button">En savoir plus</button>
+                                    </div>
+                                </div>
+                                <div class="main__content__service__modal">
+                                    <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                    <h4 class="main__content__service__modal__title">Cuisine à domicile</h4>
+                                    <p class="main__content__service__modal__description">
+                                        Découvrez une cuisine à domicile centrée sur le goût, généreuse et de saison. Nos chefs talentueux vous proposent des plats exquis qui raviront vos papilles.
+                                        Des repas chaleureux, préparés avec passion, sont à déguster en petit comité ou pour des événements plus importants. De plus, nos pâtisseries délicieuses
+                                        viennent parfaire votre expérience gastronomique.
+                                    </p>
+                                    <button class="main__content__service__modal__closeButton">Fermer</button>
+                                </div>
+                            </li>
+                            <li class="main__content__service">
+                                <div class="main__content__service__frontElement">
+                                    <img class="main__content__service__image" src="./src/images/services/babySitting.jpg" alt="Enfant dans une chaise" />
+                                    <div class="main__content__service__info">
+                                        <p class="main__content__service__info__title">Baby Sitting</p>
+                                        <button class="main__content__service__info__button">En savoir plus</button>
+                                    </div>
+                                </div>
+                                <div class="main__content__service__modal">
+                                    <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                    <h4 class="main__content__service__modal__title">Baby Sitting</h4>
+                                    <p class="main__content__service__modal__description">
+                                        Confiez vos précieux petits à notre équipe de baby-sitters. Nos baby-sitters sont attentionnés, responsables et dévoués à offrir une garde sécurisée pour vos
+                                        petits bouts de chou. Profitez de votre temps libre en toute sérénité, car la sécurité et le bien-être de vos enfants sont notre priorité.
+                                    </p>
+                                    <button class="main__content__service__modal__closeButton">Fermer</button>
+                                </div>
+                            </li>
+                            <li class="main__content__service">
+                                <div class="main__content__service__frontElement">
+                                    <img class="main__content__service__image" src="./src/images/services/logistics.jpg" alt="Deux personnes échangeant un colis" />
+                                    <div class="main__content__service__info">
+                                        <p class="main__content__service__info__title">Logistique</p>
+                                        <button class="main__content__service__info__button">En savoir plus</button>
+                                    </div>
+                                </div>
+                                <div class="main__content__service__modal">
+                                    <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                    <h4 class="main__content__service__modal__title">Logistique</h4>
+                                    <p class="main__content__service__modal__description">
+                                        "Découvrez notre gamme de services de Petite Logistique, spécialement conçus pour répondre à vos besoins de réception et de gestion des livraisons. Nous vous
+                                        simplifions la vie en prenant en charge la réception de vos courses 'drive', la réception et la livraison de colis, ainsi que la réception de commandes diverses
+                                        (meubles, etc.). Notre équipe est là pour vous offrir un service fiable et pratique. Faites-nous confiance pour une gestion logistique sans souci."
+                                    </p>
+                                    <button class="main__content__service__modal__closeButton">Fermer</button>
+                                </div>
+                            </li>
+                            <li class="main__content__service">
+                                <div class="main__content__service__frontElement">
+                                    <img class="main__content__service__image" src="./src/images/services/administration.jpg" alt="Bureau recouvert de documents administratifs" />
+                                    <div class="main__content__service__info">
+                                        <p class="main__content__service__info__title">Assistance Administrative</p>
+                                        <button class="main__content__service__info__button">En savoir plus</button>
+                                    </div>
+                                </div>
+                                <div class="main__content__service__modal">
+                                    <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                    <h4 class="main__content__service__modal__title">Assistance Administrative</h4>
+                                    <p class="main__content__service__modal__description">
+                                        Découvrez notre service d'Assistance Administrative, votre allié pour simplifier votre quotidien. Que vous ayez besoin d'aide pour gérer vos documents,
+                                        planifier un événement ou même gérer votre correspondance, nous sommes là pour vous. Confiez-nous ces tâches fastidieuses, et profitez de votre temps pour ce
+                                        qui vous plaît vraiment. Laissez-nous vous rendre la vie plus facile et moins stressante.
+                                    </p>
+                                    <button class="main__content__service__modal__closeButton">Fermer</button>
+                                </div>
+                            </li>
+                            <li class="main__content__service">
+                                <div class="main__content__service__frontElement">
+                                    <img class="main__content__service__image" src="./src/images/services/petSitting.jpg" alt="Homme tenant plusieurs chiens en laisse" />
+                                    <div class="main__content__service__info">
+                                        <p class="main__content__service__info__title">Pet Sitting</p>
+                                        <button class="main__content__service__info__button">En savoir plus</button>
+                                    </div>
+                                </div>
+                                <div class="main__content__service__modal">
+                                    <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                    <h4 class="main__content__service__modal__title">Pet Sitting</h4>
+                                    <p class="main__content__service__modal__description">
+                                        Besoin de partir en vacances ou en déplacement sans votre fidèle compagnon à quatre pattes&nbsp;? Pas de souci, notre service de Pet Sitting est là pour prendre
+                                        soin de vos animaux de compagnie. Des promenades énergiques aux câlins sur le canapé, nous nous occupons de tout. Profitez de votre temps loin de chez vous en
+                                        toute tranquillité, sachant que votre animal est entre de bonnes mains. Parce que la famille, c'est aussi poilue et à quatre pattes&nbsp;!
+                                    </p>
+                                    <button class="main__content__service__modal__closeButton">Fermer</button>
+                                </div>
+                            </li>
+                            <li class="main__content__service">
+                                <div class="main__content__service__frontElement">
+                                    <img class="main__content__service__image" src="./src/images/services/gardening.jpg" alt="Jardin fleuri" />
+                                    <div class="main__content__service__info">
+                                        <p class="main__content__service__info__title">Entretien espaces extérieurs</p>
+                                        <button class="main__content__service__info__button">En savoir plus</button>
+                                    </div>
+                                </div>
+                                <div class="main__content__service__modal">
+                                    <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                    <h4 class="main__content__service__modal__title">Entretien espaces extérieurs</h4>
+                                    <p class="main__content__service__modal__description">
+                                        Détendez-vous pendant que nous prenons soin de votre espace extérieur&nbsp;! Notre service d'entretien du jardin et de la piscine vous offre la tranquillité
+                                        d'esprit en veillant sur votre oasis de verdure. Nos jardiniers et techniciens de piscine s'occupent de tout, de la tonte de la pelouse à la maintenance de la
+                                        piscine. Profitez d'un jardin luxuriant et d'une eau de piscine cristalline sans lever le petit doigt. Nous sommes là pour vous offrir un espace extérieur
+                                        impeccable, prêt à être apprécié par toute la famille et les amis.
+                                    </p>
+                                    <button class="main__content__service__modal__closeButton">Fermer</button>
+                                </div>
+                            </li>
+                            <li class="main__content__service">
+                                <div class="main__content__service__frontElement">
+                                    <img class="main__content__service__image" src="./src/images/services/safety.jpg" alt="Verrou fermant des chaînes protégeant une porte" />
+                                    <div class="main__content__service__info">
+                                        <p class="main__content__service__info__title">Gardiennage Ponctuel de Propriété</p>
+                                        <button class="main__content__service__info__button">En savoir plus</button>
+                                    </div>
+                                </div>
+                                <div class="main__content__service__modal">
+                                    <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                    <h4 class="main__content__service__modal__title">Gardiennage Ponctuel de Propriété</h4>
+                                    <p class="main__content__service__modal__description">
+                                        Protégez votre maison en toute simplicité. Notre service de gardiennage ponctuel assure la sécurité de votre propriété en votre absence. Nous veillons sur votre
+                                        domicile pour une tranquillité d'esprit totale. Idéal pour les voyages ou les courtes absences.
+                                    </p>
+                                    <button class="main__content__service__modal__closeButton">Fermer</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="main__content__article main__content__article--neutralColor">
+                        <h3 class="main__content__article__title">Bien-être</h3>
+                        <ul class="main__content__services">
+                            <li class="main__content__service">
+                                <div class="main__content__service__frontElement">
+                                    <img class="main__content__service__image" src="./src/images/services/hairStyle.jpg" alt="Personne étant en train de coiffer une jeune femme" />
+                                    <div class="main__content__service__info">
+                                        <p class="main__content__service__info__title">Coiffure à domicile</p>
+                                        <button class="main__content__service__info__button">En savoir plus</button>
+                                    </div>
+                                </div>
+                                <div class="main__content__service__modal">
+                                    <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                    <h4 class="main__content__service__modal__title">Coiffure à domicile</h4>
+                                    <p class="main__content__service__modal__description">
+                                        Profitez d'une coiffure sur mesure sans quitter votre maison. Notre coiffeur vient directement à vous, offrant une large gamme de services de coiffure, du
+                                        relooking à la coupe classique. Détendez-vous et laissez-vous chouchouter dans le confort de votre chez-vous.
+                                    </p>
+                                    <button class="main__content__service__modal__closeButton">Fermer</button>
+                                </div>
+                            </li>
+                            <li class="main__content__service">
+                                <div class="main__content__service__frontElement">
+                                    <img class="main__content__service__image" src="./src/images/services/beautician.jpg" alt="Esthéticienne posant du vernis sur les ongles d'une femme" />
+                                    <div class="main__content__service__info">
+                                        <p class="main__content__service__info__title">Soins esthétiques à domicile</p>
+                                        <button class="main__content__service__info__button">En savoir plus</button>
+                                    </div>
+                                </div>
+                                <div class="main__content__service__modal">
+                                    <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                    <h4 class="main__content__service__modal__title">Soins esthétiques à domicile</h4>
+                                    <p class="main__content__service__modal__description">
+                                        Notre expert en beauté se rend chez vous, vous offrant une gamme complète de soins, des soins de la peau aux manucures et pédicures. Détendez-vous et
+                                        revitalisez votre beauté dans le confort de votre propre espace.
+                                    </p>
+                                    <button class="main__content__service__modal__closeButton">Fermer</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="main__content__article main__content__article--mainBrandColor">
+                        <h3 class="main__content__article__title">Événements</h3>
+                        <p class="main__content__article__paragraph">
+                            Notre équipe spécialisée dans l'organisation d'événements est là pour simplifier votre vie. Anniversaires, fêtes familiales, événements thématiques - peu importe
+                            l'occasion, nous nous chargeons de tous les détails. Des réservations aux repas, laissez-nous prendre en charge la logistique pour que vous puissiez pleinement profiter de
+                            chaque moment.
+                        </p>
+                        <p class="main__content__article__paragraph">
+                            Créez des souvenirs inoubliables avec un minimum d'efforts. Confiez-nous vos projets, nous les réaliserons avec professionnalisme.
+                        </p>
+                        <div class="main__content__article__events__image imageHoverEffect">
+                            <img src="./src/images/party.jpg" alt="Champ de lavandes au crépuscule" />
+                            <div class="imageHoverEffect__textContainer">
+                                <div class="imageHoverEffect__textContent">
+                                    <h6 class="imageHoverEffect__textContent__title">Oranisation d'événements</h6>
+                                    <p class="imageHoverEffect__textContent__text">
+                                        En nous faisant confiance, vous obtiendrez un service personnalisé et pourrez profiter sans contraintes de vos festivités
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="main__content__article main__content__article--neutralColor">
+                        <h3 class="main__content__article__title">Information</h3>
+                        <p class="main__content__article__paragraph"></p>
+                        <p class="main__content__article__paragraph">
+                            La liste de services n'est pas exhaustive. En effet, l'évolution de notre démarchage auprès d'entreprises locales peut nous amener à vous proposer de nouvelles prestations
+                            pour vous proposer <span class="strong colorBrandSecondary letterSpacingBigger">une expérience toujours plus personnalisée</span>.
+                        </p>
+                        <p class="main__content__article__paragraph">
+                            Notre offre de services nous permet de mettre en avant notre <span class="strong colorBrandSecondary letterSpacingBigger">réseau d'artisans locaux</span>.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <ul class="footer__positivePoints">
+                <li class="footer__positivePoints__item">
+                    <span class="footer__positivePoints__item__pictogram fa-solid fa-handshake"></span><span class="footer__positivePoints__item__text">Confiance</span>
+                </li>
+                <li class="footer__positivePoints__item">
+                    <span class="footer__positivePoints__item__pictogram fa-solid fa-book-bookmark"></span><span class="footer__positivePoints__item__text">Transparence</span>
+                </li>
+                <li class="footer__positivePoints__item">
+                    <span class="footer__positivePoints__item__pictogram fa-sharp fa-solid fa-hand-holding-heart"></span><span class="footer__positivePoints__item__text">Bienveillance</span>
+                </li>
+                <li class="footer__positivePoints__item">
+                    <span class="footer__positivePoints__item__pictogram fa-solid fa-user-secret"></span><span class="footer__positivePoints__item__text">Discrétion</span>
+                </li>
+            </ul>
+            <div class="footer__brandContainer">
+                <div class="footer__brandContent">
+                    <div class="footer__brandContent__info">
+                        <a class="footer__brandContent__info__logo" href="index.html"><img src="./src/images/logo2_cropped.png" alt="Logo de l'entreprise avec son nom" /></a>
+                        <p class="footer__brandContent__info__text">
+                            <span class="strong colorBrandSecondary biggerText">MSudConciergerie</span><br />
+                            710 chemin de la casserine sud<br />
+                            83510 LORGUES, FRANCE<br />
+                            SIRET&nbsp;:&nbsp;352 986 269 00020
+                        </p>
+                    </div>
+                    <div class="footer__brandContent__contact">
+                        <p class="footer__brandContent__contact__intro">
+                            <span class="strong colorBrandSecondary biggerText">Comment nous contacter&nbsp;?</span><br />
+                            En utilisant <a href="contact.html" class="footer__brandContent__contact__intro__link">notre formulaire de contact</a><br />
+                            <span class="underline">Par téléphone&nbsp;:</span>
+                        </p>
+                        <img class="footer__brandContent__contact__phoneNumbers" src="./src/images/phone_numbers.png" alt="Phone numbers not available as image description" />
+                        <p class="footer__brandContent__contact_precision smallerText italic">(du lundi au vendredi, de 9h à 19h)</p>
+                    </div>
+                    <div class="footer__brandContent__socialMedia">
+                        <p class="footer__brandContent__socialMedia__intro strong colorBrandSecondary biggerText">Nos réseaux sociaux&nbsp;:</p>
+                        <ul class="footer__brandContent__socialMedia__items">
+                            <li class="footer__brandContent__socialMedia__item">
+                                <a href="https://www.instagram.com" target="_blank" class="footer__brandContent__socialMedia__link"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+                            </li>
+                            <li class="footer__brandContent__socialMedia__item">
+                                <a href="https://www.facebook.com" target="_blank" class="footer__brandContent__socialMedia__link"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="footer__brandLinks">
+                    <li class="footer__brandLinks__item"><a href="index.html">Accueil</a></li>
+                    <li class="footer__brandLinks__item"><a href="particuliers.html">Particuliers</a></li>
+                    <li class="footer__brandLinks__item"><a href="gestion_locative.html">Gestion Locative</a></li>
+                    <li class="footer__brandLinks__item"><a href="entreprises.html">Entreprises</a></li>
+                    <li class="footer__brandLinks__item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <p class="footer_copyright">© 2023 MSudConciergerie</p>
+        </footer>
+    </body>
+</html>
