@@ -1,5 +1,5 @@
 const mainContentElement = document.getElementById('mainContent');
-const mainContentBGInterval = 5000;
+const mainContentBGInterval = 4000;
 let mainContentBGCurrentIndex = 0;
 const backgroundHeaders = [
     './src/images/headers/banc_olivier.jpg',
