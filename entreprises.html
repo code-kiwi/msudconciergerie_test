@@ -8,12 +8,15 @@
         <link rel="shortcut icon" href="./src/images/logo2_favicon.png" type="image/x-icon" />
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/entreprises.css" />
+        <link rel="stylesheet" href="./css/services.css" />
         <link rel="stylesheet" href="./assets/font_awesome/css/brands.min.css" />
         <link rel="stylesheet" href="./assets/font_awesome/css/fontawesome.min.css" />
         <link rel="stylesheet" href="./assets/font_awesome/css/solid.min.css" />
         <script src="./scripts/script.js" defer></script>
+        <script src="./scripts/services.js" defer></script>
     </head>
     <body>
+        <div id="overlay" class="overlay"></div>
         <header>
             <div class="header__banner">
                 <a href="index.html" class="header__banner__logo">
@@ -48,7 +51,136 @@
                 <article class="main__content__intro">
                     <h2 class="main__content__intro__title">Notre offre à destination des Entreprises et Administrations</h2>
                     <h4 class="main__content__intro__subtitle">"Des services personnalisés pour vos besoins et ceux de vos salariés"</h4>
-                    <p class="main__content__intro__description"></p>
+                    <p class="main__content__intro__description">
+                        Renforcez la fidélité de vos salariés en leur offrant des services au quotidien qui transforment leur environnement de travail en un lieu d'épanouissement et de bonheur. Une
+                        équipe heureuse est une équipe fidèle, et nous sommes là pour vous aider à créer cette harmonie.
+                    </p>
+                </article>
+            </div>
+            <div class="main__content__articles" id="servicesContainerElement">
+                <article class="main__content__article main__content__article--mainBrandColor main__content__articleIntroduction">
+                    <h3 class="main__content__article__title">Notre démarche</h3>
+                    <p class="main__content__article__paragraph">
+                        Chez MSudConciergerie, nous proposons des solutions de conciergerie privée spécialement conçues
+                        <span class="strong colorBrandSecondary letterSpacingBigger">pour les entreprises</span>.
+                    </p>
+                    <p class="main__content__article__paragraph">
+                        Notre approche débute par une <span class="strong colorBrandSecondary letterSpacingBigger">étude personnalisée</span> de vos besoins et de ceux de vos salariés. Que ce soit
+                        pour améliorer la vie quotidienne au bureau, offrir des moments de détente pendant les pauses ou organiser des événements, nos services sont
+                        <span class="strong colorBrandSecondary letterSpacingBigger">adaptés à vos besoins</span>.
+                    </p>
+                    <p class="main__content__article__paragraph">
+                        Nous visons à <span class="strong colorBrandSecondary letterSpacingBigger">simplifier le quotidien</span> de vos employés, à réduire leur stress et à améliorer leur
+                        <span class="strong colorBrandSecondary letterSpacingBigger">bien-être au travail</span>. Grâce à notre
+                        <span class="strong colorBrandSecondary letterSpacingBigger">gamme diversifiée de services</span>, nous offrons une expérience unique pour renforcer la qualité de vie de vos
+                        salariés au sein de votre entreprise.
+                    </p>
+                    <p class="main__content__article__paragraph">
+                        Faites équipe avec nous pour mettre en place une conciergerie d'entreprise
+                        <span class="strong colorBrandSecondary letterSpacingBigger">adaptée à vos besoins et à ceux de vos employés</span>. Offrez-leur bien plus qu'un simple emploi : offrez-leur une
+                        <span class="strong colorBrandSecondary letterSpacingBigger">meilleure qualité de vie au travail</span>.
+                    </p>
+                    <div class="main__content__article__rightPicture imageHoverEffect">
+                        <img src="./src/images/company.jpg" alt="Plusieurs personnes assises autour d'un table durant une réunion" />
+                        <div class="imageHoverEffect__textContainer">
+                            <div class="imageHoverEffect__textContent">
+                                <h6 class="imageHoverEffect__textContent__title">Notre proposition</h6>
+                                <p class="imageHoverEffect__textContent__text">Une offre de services pour simplifier votre vie et fideliser vos salariés</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="main__content__article main__content__article--neutralColor">
+                    <h3 class="main__content__article__title">Services au quotidien</h3>
+                    <ul class="main__content__services">
+                        <li class="main__content__service">
+                            <div class="main__content__service__frontElement">
+                                <img class="main__content__service__image" src="./src/images/services/company_pressing.jpg" alt="Plusieurs machines à laver dans un pressing" />
+                                <div class="main__content__service__info">
+                                    <p class="main__content__service__info__title">Service de pressing</p>
+                                    <button class="main__content__service__info__button">En savoir plus</button>
+                                </div>
+                            </div>
+                            <div class="main__content__service__modal">
+                                <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                <h4 class="main__content__service__modal__title">Service de pressing</h4>
+                                <p class="main__content__service__modal__description">
+                                    Améliorez le confort de votre entreprise avec notre service de pressing dédié. Quel que soit le type de linge que vous utilisez, du quotidien aux pièces spéciales,
+                                    notre service de pressing pour entreprises s'occupe de tout. Gardez votre environnement de travail frais et professionnel grâce à notre expertise en soins textiles.
+                                </p>
+                                <button class="main__content__service__modal__closeButton">Fermer</button>
+                            </div>
+                        </li>
+                        <li class="main__content__service">
+                            <div class="main__content__service__frontElement">
+                                <img
+                                    class="main__content__service__image"
+                                    src="./src/images/services/company_cleaning.jpg"
+                                    alt="Personne utilisant des produits ménagers et un chiffon pour nettoyer un bureau"
+                                />
+                                <div class="main__content__service__info">
+                                    <p class="main__content__service__info__title">Ménage et entretien</p>
+                                    <button class="main__content__service__info__button">En savoir plus</button>
+                                </div>
+                            </div>
+                            <div class="main__content__service__modal">
+                                <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                <h4 class="main__content__service__modal__title">Ménage et entretien</h4>
+                                <p class="main__content__service__modal__description">
+                                    Offrez à votre entreprise un environnement propre et accueillant grâce à notre service de ménage en entretien sur mesure. Notre équipe de professionnels du
+                                    nettoyage s'occupe de maintenir vos locaux en parfait état. Que ce soit pour un petit espace de bureau ou un grand complexe, notre service de ménage en entretien
+                                    assure un environnement de travail impeccable pour que vous puissiez vous concentrer sur ce qui compte vraiment.
+                                </p>
+                                <button class="main__content__service__modal__closeButton">Fermer</button>
+                            </div>
+                        </li>
+                        <li class="main__content__service">
+                            <div class="main__content__service__frontElement">
+                                <img class="main__content__service__image" src="./src/images/services/company_cooking.jpg" alt="Plusieurs lunch boxes allignées et remplie de repas appétissants" />
+                                <div class="main__content__service__info">
+                                    <p class="main__content__service__info__title">Box repas</p>
+                                    <button class="main__content__service__info__button">En savoir plus</button>
+                                </div>
+                            </div>
+                            <div class="main__content__service__modal">
+                                <i class="fa-solid fa-xmark main__content__service__modal__xmark"></i>
+                                <h4 class="main__content__service__modal__title">Box repas</h4>
+                                <p class="main__content__service__modal__description">
+                                    "Optez pour nos box repas fraîches et de saison, conçues pour répondre aux besoins de votre entreprise. Des options variées et délicieuses pour satisfaire tous les
+                                    goûts et rendre vos déjeuners sur le lieu de travail aussi pratiques que savoureux.
+                                </p>
+                                <button class="main__content__service__modal__closeButton">Fermer</button>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+                <article class="main__content__article main__content__article--mainBrandColor">
+                    <h3 class="main__content__article__title">Événements</h3>
+                    <p class="main__content__article__paragraph">
+                        Nous proposons des services d'organisation d'événements festifs <span class="strong colorBrandSecondary letterSpacingBigger">sur mesure pour votre entreprise</span>. Que ce
+                        soit pour des soirées événements, des départs à la retraite, ou d'autres célébrations, notre équipe
+                        <span class="strong colorBrandSecondary letterSpacingBigger">gère tous les détails</span>, de la planification à l'exécution.
+                    </p>
+                    <p class="main__content__article__paragraph">
+                        Nous personnalisons chaque événement en fonction de vos besoins et de <span class="strong colorBrandSecondary letterSpacingBigger">votre culture d'entreprise</span>. De la
+                        gestion de l'emplacement à la coordination des prestataires, en passant par la décoration et le menu, nous créons des
+                        <span class="strong colorBrandSecondary letterSpacingBigger">moments mémorables</span> pour vos employés.
+                    </p>
+                    <p class="main__content__article__paragraph">
+                        Offrez-leur des moments de <span class="strong colorBrandSecondary letterSpacingBigger">détente et de joie</span> grâce à nos services d'organisation d'événements festifs.
+                    </p>
+                    <p class="main__content__article__paragraph"><a href="contact.html">Contactez-nous</a> pour en savoir plus sur nos offres personnalisées.</p>
+                    <div class="main__content__article__events__image imageHoverEffect">
+                        <img src="./src/images/company_party.jpg" alt="Collègues au sein d'une entreprise durant un repas festif" />
+                        <div class="imageHoverEffect__textContainer">
+                            <div class="imageHoverEffect__textContent">
+                                <h6 class="imageHoverEffect__textContent__title">Oranisation d'événements</h6>
+                                <p class="imageHoverEffect__textContent__text">
+                                    En nous faisant confiance, vous obtiendrez un service adapté à votre culture d'entreprise et offrir des moments mémorables à vos salariés
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </div>
         </main>

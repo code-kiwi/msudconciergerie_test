@@ -378,6 +378,10 @@ main .main__content {
     background-repeat: no-repeat;
 }
 
+main .main__content__article {
+    overflow: hidden;
+}
+
 main .main__content__intro {
     position: absolute;
     top: 6rem;
