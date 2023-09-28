@@ -285,6 +285,12 @@ nav.menu {
     margin: 0 auto;
 }
 
+nav.menu .menu_active .menu__main__link {
+    font-weight: bold;
+    border-bottom-color: var(--main-brand-color);
+    background-color: var(--secondary-gray-color);
+}
+
 nav.menu > ul {
     list-style-type: none;
     display: flex;
