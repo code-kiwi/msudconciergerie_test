@@ -13,6 +13,7 @@ main .main__content__service {
     width: 15.625rem;
     overflow: hidden;
     position: relative;
+    box-shadow: var(--shadow-3);
 }
 
 main .main__content__service__frontElement {
