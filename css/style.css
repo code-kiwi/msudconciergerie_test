@@ -134,6 +134,7 @@ button {
 
 .imageHoverEffect {
     position: relative;
+    box-shadow: var(--shadow-3);
 }
 
 .imageHoverEffect > img {
